@@ -1,0 +1,919 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "a74245e242955630baf2eb380bcc34df",
+    "packages": [
+        {
+            "name": "liquid/liquid",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kalimatas/php-liquid.git",
+                "reference": "336b816ccaaacedf7347cbfe3889f146d8f67dae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kalimatas/php-liquid/zipball/336b816ccaaacedf7347cbfe3889f146d8f67dae",
+                "reference": "336b816ccaaacedf7347cbfe3889f146d8f67dae",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Liquid\\": "src/Liquid"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guz Alexander",
+                    "email": "kalimatas@gmail.com",
+                    "homepage": "http://guzalexander.com"
+                },
+                {
+                    "name": "Harald Hanek"
+                },
+                {
+                    "name": "Mateo Murphy"
+                }
+            ],
+            "description": "Liquid template engine for PHP",
+            "homepage": "https://github.com/kalimatas/php-liquid",
+            "keywords": [
+                "liquid",
+                "template"
+            ],
+            "time": "2016-06-11T12:51:15+00:00"
+        },
+        {
+            "name": "mustangostang/spyc",
+            "version": "0.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mustangostang/spyc.git",
+                "reference": "23c35ae854d835f2d7bcc3e3ad743d7e57a8c14d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mustangostang/spyc/zipball/23c35ae854d835f2d7bcc3e3ad743d7e57a8c14d",
+                "reference": "23c35ae854d835f2d7bcc3e3ad743d7e57a8c14d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.3.*@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.5.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Spyc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "mustangostang",
+                    "email": "vlad.andersen@gmail.com"
+                }
+            ],
+            "description": "A simple YAML loader/dumper class for PHP",
+            "homepage": "https://github.com/mustangostang/spyc/",
+            "keywords": [
+                "spyc",
+                "yaml",
+                "yml"
+            ],
+            "time": "2017-02-24T16:06:33+00:00"
+        },
+        {
+            "name": "ucomm/a11y-menu",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/ucomm/a11y-menu-composer.git",
+                "reference": "b89e68b7f09f1ed10f2226569a7edf858db84491"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/ucomm/a11y-menu-composer/get/b89e68b7f09f1ed10f2226569a7edf858db84491.zip",
+                "reference": "b89e68b7f09f1ed10f2226569a7edf858db84491",
+                "shasum": ""
+            },
+            "require-dev": {
+                "johnpbloch/wordpress": "@stable"
+            },
+            "type": "library",
+            "extra": {
+                "installer-paths": {
+                    "./www/content/plugins/{$name}": [
+                        "type:wordpress-plugin"
+                    ],
+                    "./www/content/themes/{$name}": [
+                        "type:wordpress-theme"
+                    ]
+                },
+                "wordpress-install-dir": "./www/wordpress"
+            },
+            "autoload": {
+                "files": [
+                    "src/A11yMenu/A11yMenu.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Berkowitz",
+                    "email": "adam.berkowitz@uconn.edu"
+                }
+            ],
+            "description": "An accessible main navigation menu",
+            "homepage": "https://bitbucket.org/ucomm/a11y-menu-composer",
+            "time": "2018-06-04T18:23:19+00:00"
+        },
+        {
+            "name": "uconn/banner",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/uconn/banner.git",
+                "reference": "f044b38ab8be92829f6b45def94e741ef894224f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/uconn/banner/zipball/f044b38ab8be92829f6b45def94e741ef894224f",
+                "reference": "f044b38ab8be92829f6b45def94e741ef894224f",
+                "shasum": ""
+            },
+            "require": {
+                "liquid/liquid": "1.2",
+                "mustangostang/spyc": "^0.6.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "UConn\\": [
+                        "src/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Daley",
+                    "email": "brian.daley@uconn.edu"
+                }
+            ],
+            "description": "The UConn Banner - Branding for the top of your web pages.",
+            "time": "2017-10-16T15:53:55+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "composer/installers",
+            "version": "v1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "049797d727261bf27f2690430d935067710049c2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/049797d727261bf27f2690430d935067710049c2",
+                "reference": "049797d727261bf27f2690430d935067710049c2",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "^4.8.36"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Eliasis",
+                "Hurad",
+                "ImageCMS",
+                "Kanboard",
+                "Lan Management System",
+                "MODX Evo",
+                "Mautic",
+                "Maya",
+                "OXID",
+                "Plentymarkets",
+                "Porto",
+                "RadPHP",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "attogram",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "cockpit",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "eZ Platform",
+                "elgg",
+                "expressionengine",
+                "fuelphp",
+                "grav",
+                "installer",
+                "itop",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lavalite",
+                "lithium",
+                "magento",
+                "majima",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "modx",
+                "moodle",
+                "osclass",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "pxcms",
+                "reindex",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "sydes",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "yawik",
+                "zend",
+                "zikula"
+            ],
+            "time": "2017-12-29T09:13:20+00:00"
+        },
+        {
+            "name": "johngrogg/ics-parser",
+            "version": "v2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/u01jmg3/ics-parser.git",
+                "reference": "2c9882b6d9408d1adaa7015f8ac88da2d42e2802"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/2c9882b6d9408d1adaa7015f8ac88da2d42e2802",
+                "reference": "2c9882b6d9408d1adaa7015f8ac88da2d42e2802",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ICal": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Thoma",
+                    "email": "info@martin-thoma.de",
+                    "role": "Original Developer"
+                },
+                {
+                    "name": "John Grogg",
+                    "email": "john.grogg@gmail.com",
+                    "role": "Developer/Prior Owner"
+                },
+                {
+                    "name": "Jonathan Goode",
+                    "role": "Developer/Owner"
+                }
+            ],
+            "description": "ICS Parser",
+            "homepage": "https://github.com/u01jmg3/ics-parser",
+            "keywords": [
+                "iCalendar",
+                "ical",
+                "ical-parser",
+                "ics",
+                "ics-parser",
+                "ifb"
+            ],
+            "time": "2017-06-12T17:48:27+00:00"
+        },
+        {
+            "name": "johnpbloch/wordpress",
+            "version": "4.9.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress.git",
+                "reference": "ecca35c283591e3f40732522334415521f5aa4b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/ecca35c283591e3f40732522334415521f5aa4b7",
+                "reference": "ecca35c283591e3f40732522334415521f5aa4b7",
+                "shasum": ""
+            },
+            "require": {
+                "johnpbloch/wordpress-core": "4.9.6",
+                "johnpbloch/wordpress-core-installer": "^1.0",
+                "php": ">=5.3.2"
+            },
+            "type": "package",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "WordPress Community",
+                    "homepage": "http://wordpress.org/about/"
+                }
+            ],
+            "description": "WordPress is web software you can use to create a beautiful website or blog.",
+            "homepage": "http://wordpress.org/",
+            "keywords": [
+                "blog",
+                "cms",
+                "wordpress"
+            ],
+            "time": "2018-05-17T20:03:03+00:00"
+        },
+        {
+            "name": "johnpbloch/wordpress-core",
+            "version": "4.9.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress-core.git",
+                "reference": "6ff81eb3d93d326b78a8bc0f120e72c161ec58c8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/6ff81eb3d93d326b78a8bc0f120e72c161ec58c8",
+                "reference": "6ff81eb3d93d326b78a8bc0f120e72c161ec58c8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "provide": {
+                "wordpress/core-implementation": "4.9.6"
+            },
+            "type": "wordpress-core",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WordPress Community",
+                    "homepage": "http://wordpress.org/about/"
+                }
+            ],
+            "description": "WordPress is web software you can use to create a beautiful website or blog.",
+            "homepage": "http://wordpress.org/",
+            "keywords": [
+                "blog",
+                "cms",
+                "wordpress"
+            ],
+            "time": "2018-05-17T20:02:55+00:00"
+        },
+        {
+            "name": "johnpbloch/wordpress-core-installer",
+            "version": "1.0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
+                "reference": "7941acd71725710a789daabe0557429da63e7ac6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/7941acd71725710a789daabe0557429da63e7ac6",
+                "reference": "7941acd71725710a789daabe0557429da63e7ac6",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "conflict": {
+                "composer/installers": "<1.0.6"
+            },
+            "require-dev": {
+                "composer/composer": "^1.0",
+                "phpunit/phpunit": ">=4.8.35"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "johnpbloch\\Composer\\WordPressCorePlugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "johnpbloch\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "John P. Bloch",
+                    "email": "me@johnpbloch.com"
+                }
+            ],
+            "description": "A custom installer to handle deploying WordPress with composer",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2018-01-29T14:49:29+00:00"
+        },
+        {
+            "name": "ucomm/advanced-custom-fields-pro",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:ucomm/advanced-custom-fields-pro.git",
+                "reference": "2f738a02872e4e5b8569b542ac0e932e2968034d"
+            },
+            "archive": {
+                "exclude": [
+                    ".*",
+                    "!.gitignore",
+                    "node_modules/",
+                    "vendor/",
+                    "www/",
+                    "composer/",
+                    "*.yml"
+                ]
+            },
+            "require-dev": {
+                "composer/installers": "~1.0",
+                "johnpbloch/wordpress": "4.7.2",
+                "ucomm/bb-theme": "*",
+                "ucomm/napier": "*",
+                "ucomm/uc-dailydigest-widget": "*",
+                "ucomm/uc-foi-database": "*",
+                "ucomm/uconn-health-clinical": "*",
+                "ucomm/uconn-today-plugin": "~1.0",
+                "wpackagist-plugin/advanced-custom-fields": "*",
+                "wpackagist-plugin/wordpress-seo": "*",
+                "wpackagist-theme/twentyseventeen": "1"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-paths": {
+                    "./www/content/plugins/{$name}": [
+                        "type:wordpress-plugin"
+                    ],
+                    "./www/content/themes/{$name}": [
+                        "type:wordpress-theme"
+                    ]
+                },
+                "wordpress-install-dir": "./www/wordpress"
+            },
+            "scripts": {
+                "build": [
+                    "echo No build task needed"
+                ],
+                "run-builds": [
+                    "find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && pwd\" \\;"
+                ],
+                "post-install-cmd": [
+                    "cd www/content/plugins && find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && composer run-script build\" \\;",
+                    "cd www/content/themes  && find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && composer run-script build\" \\;"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Brian Daley",
+                    "email": "brian@uconn.edu"
+                },
+                {
+                    "name": "Brian Kelleher",
+                    "email": "bk@uconn.edu"
+                },
+                {
+                    "name": "Adam Berkowitz",
+                    "email": "adam.berkowitz@uconn.edu"
+                }
+            ],
+            "description": "Private repo for Advanced Custom Fields.",
+            "time": "2018-04-20T17:30:31+00:00"
+        },
+        {
+            "name": "ucomm/bb-plugin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:ucomm/bb-plugin.git",
+                "reference": "74119b219ed0aff577256eb88e04be356822b8a5"
+            },
+            "archive": {
+                "exclude": [
+                    ".*",
+                    "*.yml",
+                    "!.gitignore",
+                    "node_modules/",
+                    "vendor/bin/*",
+                    "vendor/composer/*",
+                    "vendor/johnpbloch/*",
+                    "vendor/autoload.php",
+                    "www/",
+                    "composer.*"
+                ]
+            },
+            "require-dev": {
+                "composer/installers": "~1.0",
+                "johnpbloch/wordpress": "@stable",
+                "ucomm/bb-theme": "*",
+                "ucomm/castor": "dev-master",
+                "ucomm/lobo": "dev-master",
+                "ucomm/napier": "*",
+                "ucomm/uc-foi-database": "*",
+                "ucomm/uconn-today-plugin": "~1.0",
+                "wpackagist-plugin/advanced-custom-fields": "*",
+                "wpackagist-plugin/wordpress-importer": "dev-trunk",
+                "wpackagist-theme/twentyseventeen": "1"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-paths": {
+                    "./www/content/plugins/{$name}": [
+                        "type:wordpress-plugin"
+                    ],
+                    "./www/content/themes/{$name}": [
+                        "type:wordpress-theme"
+                    ]
+                }
+            },
+            "scripts": {
+                "build": [
+                    "composer install --no-dev",
+                    "yarn install --non-interactive",
+                    "gulp"
+                ],
+                "run-builds": [
+                    "find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && pwd\" \\;"
+                ],
+                "post-install-cmd": [
+                    "cd www/content/plugins && find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && composer run-script build\" \\;",
+                    "cd www/content/themes  && find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && composer run-script build\" \\;"
+                ],
+                "post-update-cmd": [
+                    "cd www/content/plugins && find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && composer run-script build\" \\;",
+                    "cd www/content/themes  && find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && composer run-script build\" \\;"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Brian Daley",
+                    "email": "brian@uconn.edu"
+                }
+            ],
+            "description": "The beaver builder plugin required to use beaver builder modules in WordPress.",
+            "time": "2018-05-24T13:52:50+00:00"
+        },
+        {
+            "name": "ucomm/bb-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:ucomm/bb-theme.git",
+                "reference": "37832deda96c9260d5261cffdc83cdb3b0ffc369"
+            },
+            "archive": {
+                "exclude": [
+                    ".*",
+                    "*.yml",
+                    "*.lock",
+                    "!.gitignore",
+                    "!vendor/*",
+                    "node_modules/",
+                    "www/"
+                ]
+            },
+            "require-dev": {
+                "composer/installers": "~1.0",
+                "johnpbloch/wordpress": "dev-master",
+                "ucomm/napier": "*",
+                "ucomm/uconn-today-plugin": "~1.0",
+                "wpackagist-plugin/advanced-custom-fields": "*",
+                "wpackagist-plugin/wordpress-seo": "*",
+                "wpackagist-theme/twentyseventeen": "1"
+            },
+            "type": "wordpress-theme",
+            "extra": {
+                "installer-paths": {
+                    "./www/content/plugins/{$name}": [
+                        "type:wordpress-plugin"
+                    ],
+                    "./www/content/themes/{$name}": [
+                        "type:wordpress-theme"
+                    ]
+                },
+                "wordpress-install-dir": "./www/wordpress"
+            },
+            "scripts": {
+                "run-builds": [
+                    "find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && pwd\" \\;"
+                ],
+                "post-install-cmd": [
+                    "cd www/content/plugins && find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && composer run-script build\" \\;",
+                    "cd www/content/themes  && find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && composer run-script build\" \\;"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Brian Kelleher",
+                    "email": "bk@uconn.edu"
+                }
+            ],
+            "description": "The beaver builder theme, intended to make child-themes from.",
+            "time": "2017-09-14T19:40:36+00:00"
+        },
+        {
+            "name": "ucomm/castor",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:ucomm/castor.git",
+                "reference": "e968763c2e0f22cf3d1ced688926d3ae83f4fed1"
+            },
+            "archive": {
+                "exclude": [
+                    "!vendor/*",
+                    "!.gitignore",
+                    ".*",
+                    "*.json",
+                    "*.lock",
+                    "*.yml",
+                    "node_modules/",
+                    "www/"
+                ]
+            },
+            "require": {
+                "johngrogg/ics-parser": "2.0.6"
+            },
+            "require-dev": {
+                "composer/installers": "~1.0",
+                "johnpbloch/wordpress": "4.8.1",
+                "kint-php/kint": "dev-master",
+                "ucomm/bb-plugin": "dev-develop",
+                "ucomm/bb-theme": "dev-master",
+                "ucomm/lobo": "dev-develop",
+                "ucomm/napier": "*",
+                "ucomm/uconn-health-clinical": "dev-develop",
+                "ucomm/uconn-today-plugin": "dev-develop",
+                "wpackagist-plugin/advanced-custom-fields": "*",
+                "wpackagist-plugin/wordpress-seo": "*",
+                "wpackagist-theme/twentyseventeen": "1"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-paths": {
+                    "./www/content/plugins/{$name}": [
+                        "type:wordpress-plugin"
+                    ],
+                    "./www/content/themes/{$name}": [
+                        "type:wordpress-theme"
+                    ]
+                },
+                "wordpress-install-dir": "./www/wordpress"
+            },
+            "scripts": {
+                "build": [
+                    "echo no build task defined"
+                ],
+                "run-builds": [
+                    "find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && pwd\" \\;"
+                ],
+                "post-update-cmd": [
+                    "cd www/content/plugins && find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && composer run-script build\" \\;",
+                    "cd www/content/themes  && find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && composer run-script build\" \\;"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Brian Kelleher",
+                    "email": "bk@uconn.edu"
+                }
+            ],
+            "description": "A Beaver Builder module pack by UComm.",
+            "time": "2018-05-23T18:27:41+00:00"
+        },
+        {
+            "name": "ucomm/uconn-today-plugin",
+            "version": "1.0.11",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:ucomm/uconn-today-plugin.git",
+                "reference": "511e863ab0df60f5c103ab88933041cdfed0d925"
+            },
+            "archive": {
+                "exclude": [
+                    ".*",
+                    "!.gitignore",
+                    "node_modules/",
+                    "vendor/",
+                    "www/",
+                    "composer/",
+                    "*.yml"
+                ]
+            },
+            "require-dev": {
+                "composer/installers": "~1.0",
+                "johnpbloch/wordpress": "4.7.2",
+                "ucomm/advanced-custom-fields-pro": "*",
+                "ucomm/bb-plugin": "*",
+                "ucomm/bb-theme": "*",
+                "ucomm/castor": "*",
+                "ucomm/lobo": "*",
+                "ucomm/napier": "*",
+                "ucomm/uc-dailydigest-widget": "*",
+                "ucomm/uconn-health-clinical": "*",
+                "wpackagist-plugin/advanced-custom-fields": "*",
+                "wpackagist-plugin/wordpress-importer": "*",
+                "wpackagist-plugin/wordpress-seo": "*",
+                "wpackagist-theme/twentyseventeen": "1"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-paths": {
+                    "./www/content/plugins/{$name}": [
+                        "type:wordpress-plugin"
+                    ],
+                    "./www/content/themes/{$name}": [
+                        "type:wordpress-theme"
+                    ]
+                },
+                "wordpress-install-dir": "./www/wordpress"
+            },
+            "scripts": {
+                "build": [
+                    "echo no build"
+                ],
+                "run-builds": [
+                    "find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && pwd\" \\;"
+                ],
+                "post-install-cmd": [
+                    "cd www/content/plugins && find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && composer run-script build\" \\;",
+                    "cd www/content/themes  && find . -maxdepth 1 -type d \\( ! -name . \\) -exec bash -c \"cd '{}' && composer run-script build\" \\;"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shaun Cayabyab",
+                    "email": "shaun.cayabyab@uconn.edu"
+                },
+                {
+                    "name": "Brian Daley",
+                    "email": "brian@uconn.edu"
+                },
+                {
+                    "name": "Adam Berkowitz",
+                    "email": "adam.berkowitz@uconn.edu"
+                },
+                {
+                    "name": "Brian Kelleher",
+                    "email": "bk@uconn.edu"
+                }
+            ],
+            "description": "Displays posts from the UConn Today website",
+            "time": "2018-05-23T17:37:03+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/advanced-custom-fields",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/advanced-custom-fields/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.zip?timestamp=1522916166",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/advanced-custom-fields/",
+            "time": "2018-04-05T08:16:06+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-importer",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-importer/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-importer.zip?timestamp=1520070823",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-importer/",
+            "time": "2018-03-03T09:53:43+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "uconn/banner": 20,
+        "ucomm/a11y-menu": 20,
+        "johnpbloch/wordpress": 0
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
